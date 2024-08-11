@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg,
+        rgba(0, 150, 136, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    color: #f0f0f0;
+}
