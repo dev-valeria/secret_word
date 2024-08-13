@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Secret Word Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+O Secret Word Game é um jogo simples de adivinhação de palavras desenvolvido em React. O objetivo do jogo é adivinhar uma palavra secreta escolhida aleatoriamente a partir de uma lista de palavras. O jogo exibe uma tela inicial, o jogo em si e uma tela de fim de jogo, onde os usuários podem reiniciar o jogo.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `npm start`
+- React
+- CSS para estilização
+- Hooks do React (`useState`, `useEffect`, `useCallback`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estrutura do Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O projeto é estruturado da seguinte forma:
 
-### `npm test`
+- `App.js`: Componente principal que gerencia o estado do jogo e renderiza os componentes de tela inicial, jogo e fim de jogo.
+- `components/StartScreen.js`: Componente que exibe a tela inicial do jogo e fornece um botão para iniciar o jogo.
+- `components/Game.js`: Componente que exibe o jogo em si, permitindo ao usuário adivinhar letras e mostrando o progresso.
+- `components/GameOver.js`: Componente que exibe a tela de fim de jogo com a pontuação final e um botão para reiniciar o jogo.
+- `data/words.js`: Arquivo contendo a lista de palavras categorizadas para o jogo.
+- `App.css`: Arquivo de estilo global para a aplicação.
+- `StartScreen.css`: Arquivo de estilo para o componente de tela inicial.
+- `Game.css`: Arquivo de estilo para o componente de jogo.
+- `GameOver.css`: Arquivo de estilo para o componente de fim de jogo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionamento
 
-### `npm run build`
+1. **Tela Inicial**: O jogo começa com uma tela inicial que apresenta o título e um botão para iniciar o jogo.
+2. **Jogo**: Quando o jogo é iniciado, uma palavra e uma categoria são escolhidas aleatoriamente. O jogador deve adivinhar as letras da palavra. O jogo exibe as letras já adivinhadas, letras erradas e o número de tentativas restantes.
+3. **Tela de Fim de Jogo**: Quando o jogador perde todas as tentativas ou adivinha todas as letras corretamente, a tela de fim de jogo é exibida, mostrando a pontuação final e permitindo reiniciar o jogo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Iniciar o Jogo**: Ao clicar no botão "Começar o jogo", uma nova palavra é escolhida e o jogo é iniciado.
+- **Adivinhar Letras**: O jogador pode adivinhar letras que são verificadas contra a palavra secreta. Letras corretas são adicionadas à lista de letras adivinhadas, e letras erradas reduzem o número de tentativas restantes.
+- **Tela de Fim de Jogo**: Se o jogador adivinha todas as letras corretamente ou fica sem tentativas, o jogo exibe a pontuação final e um botão para reiniciar o jogo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como Rodar o Projeto
 
-### `npm run eject`
+1. Clone o repositório:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/seu-usuario/secret-word-game.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
