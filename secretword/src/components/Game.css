@@ -1,43 +1,61 @@
+.game {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
 .game h1 {
   font-size: 2.5em;
+  color: #333;
+  margin-bottom: 0.5em;
 }
 
 .points span {
   font-weight: bold;
+  color: #28a745;
+  font-size: 1.2em;
 }
 
 .tip span {
-  color: #ecfa00;
-}
-
-.wordContainer {
-  margin: 1.5em;
-  padding: 1.5em;
-  border: 20px solid #ecfa00;
-  display: flex;
-}
-
-.letter,
- .blankSquare {
-  font-size: 70px;
-  line-height: 1.5;
-  border: 3px solid #000;
-  height: 100px;
-  width: 100px;
-  text-transform: uppercase;
-  background-color: #fff;
-  color: #000;
+  color: #007bff;
   font-weight: bold;
 }
 
+.wordContainer {
+  margin: 2em 0;
+  padding: 1.5em;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.letter,
+.blankSquare {
+  font-size: 2.5em;
+  line-height: 1.5;
+  border-radius: 5px;
+  height: 80px;
+  width: 80px;
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .letterContainer p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
 }
 
 .letterContainer form {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5em;
 }
 
 .letterContainer input {
@@ -45,6 +63,37 @@
   width: 50px;
   font-size: 2em;
   text-align: center;
-  margin-right: 1em;
-  
+  border-radius: 5px;
+  border: 2px solid #007bff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.letterContainer input:focus {
+  border-color: #28a745;
+}
+
+.letterContainer button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.letterContainer button:hover {
+  background-color: #0056b3;
+}
+
+.wrongLettersContainer {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+.wrongLettersContainer span {
+  color: #dc3545;
+  font-weight: bold;
 }

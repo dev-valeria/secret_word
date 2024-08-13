@@ -1,5 +1,78 @@
+/* GameOver.css */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://source.unsplash.com/1920x1080/?nature,water') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  /* Fundo escurecido com mais transparência */
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  /* Bordas mais arredondadas */
+  max-width: 90%;
+  /* Limita a largura máxima */
+}
+
+h1 {
+  font-size: 3.5em;
+  /* Tamanho aumentado para destaque */
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Adiciona sombra ao texto para melhorar a legibilidade */
+}
+
+h2 {
+  font-size: 2.5em;
+  /* Tamanho aumentado para o subtítulo */
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
 h2 span {
   color: #ecfa00;
-  font-size: 1.5em;
-  
+  font-size: 1.8em;
+  /* Tamanho aumentado para o destaque */
+}
+
+button {
+  padding: 12px 24px;
+  /* Ajusta o padding para um botão mais proporcional */
+  font-size: 1.4em;
+  /* Aumenta o tamanho da fonte do botão */
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  /* Azul mais suave para o botão */
+  border: none;
+  border-radius: 8px;
+  /* Bordas mais arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  /* Adiciona sombra ao botão */
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* Azul mais escuro para o hover */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+  /* Sombra mais pronunciada no hover */
 }
