@@ -5,7 +5,7 @@ const Game = ({
   verifyLetter,
   pickedWord,
   pickedCategory,
-  letters, // Define a prop como um array vazio por padrão
+  letters, 
   guessedLetters,
   wrongLetters,
   guesses,
